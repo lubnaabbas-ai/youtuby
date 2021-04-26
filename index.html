@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوتيوبي</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">   
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="mt-5 rtl"> 
+  <div class="layer"></div>
+<div id="top-menu">
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <i class="fas fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand" href="index.html">
+            يوتيوبي
+            <span class="video-icon p-1"><i class="fas fa-play-circle"></i></span>
+          </a>
+          </b>
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item first-list-element">
+                <a class="nav-link px-3 ml-1 mr-3" href="index.html">الفيديوهات المقترحة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 ml-1" href="#">المرفوعة حديثا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 ml-1" href="#">الفيديوهات الرائجة</a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search">
+              <button onclick="location.href='search.html';" class="btn btn-outline-info my-2 my-sm-0" type="submit">ابحث</button>
+            </div>
+          </div>
+          <i class="fas fa-search mr-4 search-icon"></i>
+          <a href="#" class="nav-link login" data-toggle="modal" data-target="#loginModel">تسجيل الدخول</a>
+      </nav>
+      <input type="search" class="form-control search-input" placeholder="ابحث عن...">
+    
+<!-- Modal -->
+    <div class="modal fade" id="loginModel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password" class="col-form-label">كلمة المرور:</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="">نسيت كلمة المرور</a>
+            <a href="" class="mx-auto">انشاء حساب</a>
+            <button type="button" class="btn btn-primary">دخول</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-4">
+
+      <div id="wrap">
+        <div class="sidebar">
+          <ul class="list-group list-group-flush pl-0">
+            <a href="index.html" class="list-group-item list-group-item-action">
+            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+            </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+              <i class="fas fa-algolia mr-2 purple"></i> الفيديوهات المقترحة
+            </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-plus-square mr-2 purple"></i> المرفوعة حديثا 
+            </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                  <i class="fas fa-fire-alt mr-2 purple"></i> الفيديوهات الرائجة
+            </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-fire-alt mr-2 purple"></i> فيديوهاتي
+            </a>
+            <a href="log.html" class="list-group-item list-group-item-action">
+                      <i class="fas fa-history mr-2 purple"></i> سجل المشاهدة 
+            </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-share-square mr-2 purple"></i> الاشتراكات
+           </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                  <i class="fas fa-film mr-2 purple"></i> الافلام والعروض
+           </a>
+           <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-gamepad mr-2 purple"></i> العاب الفيديو
+           </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                      <i class="fas fa-tshirt mr-2 purple"></i> الموضة والجمال
+           </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                        <i class="fas fa-graduation mr-2 purple"></i> محتوى تعليمي
+           </a>
+            <a href="index.html" class="list-group-item list-group-item-action">
+                           <i class="fas fa-cog mr-2 purple"></i> الاعدادات
+           </a>
+           <a href="index.html" class="list-group-item list-group-item-action">
+                            <i class="fas fa-question-circle mr-2 purple"></i> مساعدة
+           </a>
+          <a href="https://academy.hsoup.com/store/1">
+                            دوورة تطوير واجهات المستخدم <br>
+                            &copy; 2020 اكاديمية حسوب
+          </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="row card-content m-4">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card p-1 mb-4">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card-image"> 
+                    <time>9:20</time>
+                    <i class="fas fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <a href="watch.html">
+                  
+                <div class="card-body p-0">
+                  <p class="card-title">برمجية REST تعلم كيف تبني واجهات - RESTFUL شرح وفلسفة</p>
+                </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                 <span class="d-block"> <i class="fas fa-film"></i><span>3الاف مشاهدة</span> </span>
+                 <i class="far fa-clock"></i><span>قبل9 اشهر</span>
+                 </small>
+                </div>
+                <a href="channel.html" class="channel-img">
+                  <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <div class="card-icons">
+                <a href="watch.html">
+                  <img src="img/thumbnail/frontend.jpg" class="card-img-top" alt="card-image">
+                  <time>5.40</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <a href="watch.html">
+                
+              <div class="card-body p-0">
+                <p class="card-title">برمجية شرح وفلسفة</p>
+              </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+               <span class="d-block"> <i class="fas fa-film"></i><span>200مشاهدة</span> </span>
+               <i class="far fa-clock"></i><span>قبل4 اشهر</span>
+               </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+                <span class="card-text">أكاديمية حسوب</span>
+              </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card mb-4 p-1">
+            <div class="card-icons">
+              <a href="watch.html">
+                <img src="img/thumbnail/khamsat1.png" class="card-img-top" alt="card-image">
+                <time>20:40</time>
+                <i class="fas fa-play fa-2x"></i>
+              </a>
+            </div>
+            <a href="watch.html">
+            
+            <div class="card-body p-0">
+              <p class="card-title">شراء الخدمات المصغرة</p>
+            </div>
+            </a>
+            <div class="card-footer">
+              <small class="text-muted">
+             <span class="d-block"> <i class="fas fa-film"></i><span>5الاف مشاهدة</span> </span>
+             <i class="far fa-clock"></i><span>قبل4 اشهر</span>
+             </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+              <span class="card-text">أكاديمية حسوب</span>
+            </a>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 p-1">
+          <div class="card-icons">
+            <a href="watch.html">
+              <img src="img/thumbnail/khamsat2.jpg" class="card-img-top" alt="card-image">
+              <time>9:10</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <a href="watch.html">
+           
+          <div class="card-body p-0">
+            <p class="card-title">خمسسسسسات</p>
+          </div>
+          </a>
+          <div class="card-footer">
+            <small class="text-muted">
+           <span class="d-block"> <i class="fas fa-film"></i><span>الف مشاهدة</span> </span>
+           <i class="far fa-clock"></i><span>قبل9 اشهر</span>
+           </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+            <span class="card-text">أكاديمية حسوب</span>
+          </a>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+          <img src="img/thumbnail/khamsat3.png" class="card-img-top" alt="card-image">
+          <time>12:40</time>
+          <i class="fas fa-play fa-2x"></i>
+          </a>
+        </div>
+        <a href="watch.html">
+        
+        <div class="card-body p-0">
+          <p class="card-title">خمسات الجزء الثاني</p>
+        </div>
+        </a>
+        <div class="card-footer">
+          <small class="text-muted">
+          <span class="d-block"> <i class="fas fa-film"></i><span>الاف ومئتان مشاهدة</span> </span>
+         <i class="far fa-clock"></i><span>قبل6اشهر</span>
+         </small>
+        </div>
+        <a href="channel.html" class="channel-img">
+          <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+          <span class="card-text">أكاديمية حسوب</span>
+        </a>
+      </div>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+        <img src="img/thumbnail/khamsat4.png" class="card-img-top" alt="card-image">
+        <time>15:30</time>
+        <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+      <a href="watch.html">
+     
+      <div class="card-body p-0">
+        <p class="card-title">العمل عبر خمسات</p>
+      </div>
+      </a>
+      <div class="card-footer">
+        <small class="text-muted">
+       <span class="d-block"> <i class="fas fa-film"></i><span>600 مشاهدة</span> </span>
+       <i class="far fa-clock"></i><span>قبل2 اشهر</span>
+       </small>
+      </div>
+      <a href="channel.html" class="channel-img">
+        <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+        <span class="card-text">أكاديمية حسوب</span>
+      </a>
+    </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+      <img src="img/thumbnail/mostaql.png" class="card-img-top" alt="card-image">
+      <time>8:35</time>
+      <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+  
+    <div class="card-body p-0">
+      <p class="card-title">منصة العمل الحر للمستقلين في الوطن العربي</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+     <span class="d-block"> <i class="fas fa-film"></i><span>3الاف مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل5 اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+      <img src="img/thumbnail/mostaql1.jpg" class="card-img-top" alt="card-image">
+      <time>12:45</time>
+      <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+     
+    <div class="card-body p-0">
+      <p class="card-title">حلقة الوصل بينك وبين المبدعين العرب</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+     <span class="d-block"> <i class="fas fa-film"></i><span>300 مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل4 اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+      <img src="img/thumbnail/mostaql2.png" class="card-img-top" alt="card-image">
+      <time>10:50</time>
+      <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+     
+    <div class="card-body p-0">
+      <p class="card-title">مستقل</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+     <span class="d-block"> <i class="fas fa-film"></i><span>8الاف مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل7اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+      <img src="img/thumbnail/php.jpg" class="card-img-top" alt="card-image">
+      <time>11:20</time>
+      <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+    
+    <div class="card-body p-0">
+      <p class="card-title">برمجيات</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+      <span class="d-block"> <i class="fas fa-film"></i><span>3الاف مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل5 اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+        <img src="img/thumbnail/ruby.jpg" class="card-img-top" alt="card-image">
+        <time>15:12</time>
+        <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+    
+    <div class="card-body p-0">
+      <p class="card-title">روووبي</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+      <span class="d-block"> <i class="fas fa-film"></i><span>2الاف مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل8 اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mb-4 p-1">
+    <div class="card-icons">
+      <a href="watch.html">
+        <img src="img/thumbnail/ruby.jpg" class="card-img-top" alt="card-image">
+        <time>30:15</time>
+        <i class="fas fa-play fa-2x"></i>
+      </a>
+    </div>
+    <a href="watch.html">
+ 
+    <div class="card-body p-0">
+      <p class="card-title">github</p>
+    </div>
+    </a>
+    <div class="card-footer">
+      <small class="text-muted">
+       <span class="d-block"> <i class="fas fa-film"></i><span>6الاف مشاهدة</span> </span>
+     <i class="far fa-clock"></i><span>قبل7 اشهر</span>
+     </small>
+    </div>
+    <a href="channel.html" class="channel-img">
+      <img src="img/ch-logo.png" alt="channel-image" class="rounded-circle my-2 ml-3" width="30">
+      <span class="card-text">أكاديمية حسوب</span>
+    </a>
+  </div>
+</div>
+
+        </div>
+      </div>
+</div>
+<script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
