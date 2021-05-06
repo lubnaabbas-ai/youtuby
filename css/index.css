@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "ar-font";
+    font-family: "cairoFont";
     src: url(../fonts/Cairo-Regular.ttf);
 }
 body {
-    font-family: "cairo, Arial, sans-serif";
+    font-family: "cairoFont", Arial, sans-serif;
     background-color: #fafafa;
 }
 a {
